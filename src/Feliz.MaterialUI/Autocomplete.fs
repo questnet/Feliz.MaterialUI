@@ -17,7 +17,7 @@ type Autocomplete =
       ( ?ignoreAccents: bool,
         ?ignoreCase: bool,
         ?matchFrom: AutocompleteMatchFrom,
-        ?stringify: 'option -> string,
+        ?stringify: obj -> string,
         ?trim: bool
       ) : 'option [] -> AutocompleteFilterOptionsState -> 'option []
       =
